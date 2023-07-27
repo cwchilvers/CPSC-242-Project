@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PLAYER_Roll : MonoBehaviour
+{
+    public Rigidbody rb;
+    public float moveSpeed = 10f;
+    public Camera mainCamera;
+
+    private float xInput;
+    private float zInput;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        ProcessInputs();
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    private void ProcessInputs()
+    {
+        moveHorizontal = Input.GetAxisRaw("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+    }
+
+    private void Move()
+    {
+        Vector3 movement = mainCamera.transform.forward * moveVertical * moveSpeed * Time.deltaTime;
+        rb.AddForce(movement);
+
+        movement = mainCamera.transform.right * moveHorizontal * moveSpeed * Time.deltaTime;
+        rb.AddForce(movement);
+    }
+}

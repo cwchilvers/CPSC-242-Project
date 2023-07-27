@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PLAYER_Roll : MonoBehaviour
+{
+    public Rigidbody rb;
+    public float moveSpeed = 10f;
+    public Camera mainCamera;
+
+    private float xInput;
+    private float zInput;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        ProcessInputs();+++-+
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    private void ProcessInputs()
+    {
+        xInput = Input.GetAxis("Horizontal");
+        zInput = Input.GetAxis("Vertical");
+    }
+
+    private void Move()
+    {
+        rb.AddRelativeForce(new Vector3(xInput, 0f, zInput) * moveSpeed;
+    }
+}
+
+// rb.AddRelativeForce(new Vector3(xInput, 0f, zInput) * moveSpeed;
+
+
+
+// var movementRelativeToCamera = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed;
+// var cameraLookingDirection = cameraObject.transform.rotation * Vector3.forward;
+// cameraLookingDirection = new Vector3(cameraLookingDirection.x, 0f, cameraLookingDirection.z).normalized;
+// var absuluteMovement = Quaternion.FromToRotation(Vector3.forward, cameraLookingDirection) * movementRelativeToCamera;
+
+
+//private void Move()
+//{
+    // Define Push Direction = PlayerPosition - CameraPosition
+    //Vector3 pushDir = rb.transform.position - mainCamera.transform.position;
+
+    // Move
+    //rb.AddForce(pushDir.normalized * moveSpeed);
+//}
+}

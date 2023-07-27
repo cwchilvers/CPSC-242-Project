@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PLAYER_Movement : MonoBehaviour
+{
+    public LayerMask groundLayer;
+    public MeshCollider playerCollider;
+    public Rigidbody playerRigidbody;
+    public Camera mainCamera;
+
+    public float buttonTime = 0.5f;
+    public float jumpAmount = 40;
+
+    private float _jumpTime;
+    private float _forwardForce = 100.0f;
+    private bool _jumping;
+    private bool _isGrounded;
+
+
+    void Update()
+    {
+        _isGrounded = IsGrounded();
+        Jump();
+        MoveForward();
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics.CheckCapsule(playerCollider.bounds.center, new Vector3(playerCollider.bounds.center.x, playerCollider.bounds.min.y,
+            playerCollider.bounds.center.z), playerCollider.contactOffset = .7f, groundLayer);
+    }
+
+    private void Jump()
+    {
+        if (_isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        {
+            _jumping = true;
+            _jumpTime = 0;
+            _isGrounded = false;
+        }
+
+        if (_jumping)
+        {
+            playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, jumpAmount);
+            _jumpTime += Time.deltaTime;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) | _jumpTime > buttonTime)
+        {
+            _jumping = false;
+        }
+    }
+
+    private void MoveForward()
+    {
+        if (Input.GetKey(KeyCode.W) && _jumping == true)
+        playerRigidbody.AddForce(mainCamera.transform.forward * _forwardForce);
+    }
+}
