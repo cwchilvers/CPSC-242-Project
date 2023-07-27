@@ -22,7 +22,7 @@
 This project was developed for my Introduction to Game Industry class (CPSC-242) at Chapman University. The goal of the project was to create a simple 3D game using the Unity game engine and use Blender to create the models and textures. I decided to create a simple 3D platformer game where the player controls a pill with limited maneuverability. The player must navigate the level and reach the end to win. Models, user interface, and music were created by myself.
 
 ## Installation
-1. Go to [Releases](https://github.com/cwchilvers/Poppin-Pills/releases) and download the `Poppin' Pills.zip` file.
+1. Go to [Releases](https://github.com/cwchilvers/Poppin-Pills/releases) and download the `Poppin.Pills.zip` file.
 2. Extract the contents of the zip file.
 3. Run the `Poppin' Pills.exe` file.
 
