@@ -4,6 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Unity-FFFFFF.svg?style=for-the-badge&logo=Unity&logoColor=black" alt="Unity">
+  <img src="https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=fff&style=for-the-badge" alt="C#"> 
   <img src="https://img.shields.io/badge/License-CC0 1.0-lightgrey.svg?style=for-the-badge" alt="CC0 1.0 License">
 </p>
 
@@ -14,9 +15,10 @@
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Screenshots](#screenshots)
-5. [Credits](#credits)
-6. [License](#license)
+5. [Technologies Used](#technologies-used)
+6. [Credits](#credits)
 7. [Contact Information](#contact-information)
+8. [License](#license)
 
 ## Description
 This project was developed for my Introduction to Game Industry class (CPSC-242) at Chapman University. The goal of the project was to create a simple 3D game using the Unity game engine and use Blender to create the models and textures. I decided to create a simple 3D platformer game where the player controls a pill with limited maneuverability. The player must navigate the level and reach the end to win. Models, user interface, and music were created by myself.
@@ -37,20 +39,24 @@ This project was developed for my Introduction to Game Industry class (CPSC-242)
   <img src="https://github.com/cwchilvers/Boll-a-Rall/assets/59628271/774a4db0-d43e-41cc-ab4f-43590b7149c8">
 </p>
 
+## Technologies Used
+* [Unity](https://unity.com/)
+* C#
+
 ## Credits
-- [Unity](https://unity.com/)
-- [Blender](https://www.blender.org/)
-- [Quick Outline](https://assetstore.unity.com/packages/tools/utilities/quick-outline-115488)
-- [freesound](https://freesound.org/)
-
 #### Fonts
-- [Liberation Sans](https://www.dafont.com/liberation-sans.font)
+* [Liberation Sans](https://www.dafont.com/liberation-sans.font)
 
-## License
-This project is licensed under the [Creative Commons Zero v1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
+#### Misc.
+* [Quick Outline](https://assetstore.unity.com/packages/tools/utilities/quick-outline-115488)
+* [Blender](https://www.blender.org/)
+* [freesound](https://freesound.org/)
 
 ## Contact Information
 <p align="center">
     <a href="mailto:cwchilvers@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
     <a href="https://github.com/cwchilvers"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub"></a>
 </p>
+
+## License
+This project is licensed under the [Creative Commons Zero v1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
