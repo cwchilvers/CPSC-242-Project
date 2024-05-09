@@ -12,27 +12,16 @@
 
 ## Table of Contents
 1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Screenshots](#screenshots)
-5. [Technologies Used](#technologies-used)
+2. [Screenshots](#screenshots)
+3. [Technologies Used](#technologies-used)
+4. [Usage](#usage)
+5. [Installation](#installation)
 6. [Credits](#credits)
 7. [Contact Information](#contact-information)
 8. [License](#license)
 
 ## Description
 This project was developed for my Introduction to Game Industry class (CPSC-242) at Chapman University. The goal of the project was to create a simple 3D game using the Unity game engine and use Blender to create the models and textures. I decided to create a simple 3D platformer game where the player controls a pill with limited maneuverability. The player must navigate the level and reach the end to win. Models, user interface, and music were created by myself.
-
-## Installation
-1. Go to [Releases](https://github.com/cwchilvers/Poppin-Pills/releases) and download the `Poppin.Pills.zip` file.
-2. Extract the contents of the zip file.
-3. Run the `Poppin' Pills.exe` file.
-
-## Usage
-- Use the W key to move forward
-- Press the spacebar to jump
-- Left click and drag to rotate the camera
-- Get to the end of the level to win
 
 ## Screenshots
 <p align="center">
@@ -42,6 +31,21 @@ This project was developed for my Introduction to Game Industry class (CPSC-242)
 ## Technologies Used
 * [Unity](https://unity.com/)
 * C#
+
+## Usage
+Try out the live web browser version [here](https://cpsc-242.cwchilvers.io).
+
+* Use the W key to move forward
+* Press the spacebar to jump
+* Left click and drag to rotate the camera
+* Get to the end of the level to win
+
+## Installation
+**Note: Windows only.**
+
+1. Go to [Releases](https://github.com/cwchilvers/Poppin-Pills/releases) and download the `Poppin.Pills.zip` file.
+2. Extract the contents of the zip file.
+3. Run the `Poppin' Pills.exe` file.
 
 ## Credits
 #### Fonts
